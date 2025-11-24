@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Riverside Wellness Clinic</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<!-- =========================
+     HEADER / NAVBAR
+========================= -->
+<header class="site-header">
+    <div class="header-inner">
+        <div class="logo">
+            <span class="logo-icon"></span>
+            <div class="logo-text">
+                <span class="logo-title">Riverside Wellness Clinic</span>
+                <span class="logo-subtitle">Primary Care • Austin, TX</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#doctors" class="nav-link">Our Doctors</a>
+            <a href="#testimonials" class="nav-link">Patients</a>
+            <a href="#contact" class="nav-link nav-cta">Book Visit</a>
+        </nav>
+    </div>
+</header>
+
+<!-- =========================
+     HERO SECTION
+========================= -->
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Modern Care, Human Touch.</h1>
+        <p>
+            Riverside Wellness Clinic is your neighborhood primary care center in Austin, TX –
+            with same-day appointments, trusted doctors, and 24/7 AI symptom guidance.
+        </p>
+
+        <div class="hero-actions">
+            <button id="open-chat" class="primary-btn">
+                💬 Chat with Vena AI
+            </button>
+            <button class="secondary-btn" onclick="document.querySelector('#services').scrollIntoView({behavior:'smooth'})">
+                View Clinic Services
+            </button>
+        </div>
+
+        <div class="hero-meta">
+            <span>✔ Same-day appointments</span>
+            <span>✔ Board-certified physicians</span>
+            <span>✔ Secure & confidential</span>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-card">
+            <div class="hero-doctor-avatar"></div>
+            <div class="hero-card-text">
+                <h3>Need quick guidance?</h3>
+                <p>Chat with Vena AI to understand your symptoms and prepare for your visit.</p>
+            </div>
+        </div>
+        <div class="hero-badge">
+            Open today • 9:00 AM – 5:00 PM
+        </div>
+    </div>
+</section>
+
+<!-- =========================
+     SERVICES SECTION
+========================= -->
+<section id="services" class="section services-section">
+    <div class="section-header">
+        <h2>Clinic Services</h2>
+        <p>Comprehensive primary care for adults and families in Austin.</p>
+    </div>
+
+    <div class="card-grid">
+        <article class="card service-card">
+            <h3>General Checkups</h3>
+            <p>Annual physicals, wellness exams, and preventive screenings tailored to you.</p>
+        </article>
+
+        <article class="card service-card">
+            <h3>Chronic Care</h3>
+            <p>Ongoing support for diabetes, hypertension, heart disease, and more.</p>
+        </article>
+
+        <article class="card service-card">
+            <h3>Same-Day Sick Visits</h3>
+            <p>Same-day appointments for flu, infections, minor injuries, and sudden symptoms.</p>
+        </article>
+
+        <article class="card service-card">
+            <h3>Labs & Diagnostics</h3>
+            <p>On-site bloodwork, ECG, and basic testing ordered directly by our physicians.</p>
+        </article>
+    </div>
+</section>
+
+<!-- =========================
+     DOCTORS SECTION
+========================= -->
+<section id="doctors" class="section doctors-section">
+    <div class="section-header">
+        <h2>Meet Our Doctors</h2>
+        <p>Experienced, compassionate, and focused on listening first.</p>
+    </div>
+
+    <div class="card-grid doctor-grid">
+        <article class="card doctor-card">
+            <div class="doctor-avatar"></div>
+            <h3>Dr. Michael Harris</h3>
+            <p class="doctor-specialty">Internal Medicine</p>
+            <p class="doctor-desc">
+                Specializes in chronic disease management, preventive care, and complex adult conditions.
+            </p>
+        </article>
+
+        <article class="card doctor-card">
+            <div class="doctor-avatar"></div>
+            <h3>Dr. Emily Carter</h3>
+            <p class="doctor-specialty">Family Medicine</p>
+            <p class="doctor-desc">
+                Cares for patients of all ages, from routine checkups to long-term family care.
+            </p>
+        </article>
+
+        <article class="card doctor-card">
+            <div class="doctor-avatar"></div>
+            <h3>Dr. Jason Lee</h3>
+            <p class="doctor-specialty">Urgent & Same-Day Care</p>
+            <p class="doctor-desc">
+                Focused on acute symptoms, minor injuries, and fast in-clinic evaluations.
+            </p>
+        </article>
+    </div>
+</section>
+
+<!-- =========================
+     TESTIMONIALS
+========================= -->
+<section id="testimonials" class="section testimonials-section">
+    <div class="section-header">
+        <h2>What Patients Say</h2>
+        <p>Real words from patients who trust Riverside Wellness Clinic.</p>
+    </div>
+
+    <div class="card-grid">
+        <article class="card testimonial-card">
+            <p class="quote">
+                “Vena AI helped me explain my chest discomfort before I even arrived.
+                The doctor already had context, which made the visit so much smoother.”
+            </p>
+            <p class="author">— Sarah M., Austin</p>
+        </article>
+
+        <article class="card testimonial-card">
+            <p class="quote">
+                “I booked my blood pressure follow-up in minutes. The assistant guided me
+                on what to watch for and then helped schedule the visit.”
+            </p>
+            <p class="author">— Daniel R., South Austin</p>
+        </article>
+
+        <article class="card testimonial-card">
+            <p class="quote">
+                “The clinic feels modern, but the team is very down-to-earth and kind.
+                I never feel rushed during my appointments.”
+            </p>
+            <p class="author">— Jessica L., Riverside</p>
+        </article>
+    </div>
+</section>
+
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+<section id="contact" class="section contact-section">
+    <div class="contact-inner">
+        <div class="contact-text">
+            <h2>Visit or Contact Riverside Wellness Clinic</h2>
+            <p>
+                Prefer to speak with our front desk first? Share your details and we’ll
+                follow up to confirm an appointment time.
+            </p>
+
+            <ul class="contact-list">
+                <li>📍 500 Riverside Drive, Austin, TX 78701</li>
+                <li>📞 (512) 555-0198</li>
+                <li>📧 care@riversidewellnessclinic.com</li>
+                <li>🕒 Open Monday – Friday, 9:00 AM – 5:00 PM</li>
+            </ul>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Mock form for portfolio – no backend wired.');">
+            <div class="form-row">
+                <input type="text" placeholder="Full name" required>
+            </div>
+            <div class="form-row">
+                <input type="email" placeholder="Email address" required>
+            </div>
+            <div class="form-row two-col">
+                <input type="text" placeholder="Phone number">
+                <input type="text" placeholder="Preferred date">
+            </div>
+            <div class="form-row">
+                <textarea rows="3" placeholder="What would you like to discuss?"></textarea>
+            </div>
+            <button class="primary-btn full-width" type="submit">
+                Request a Call Back
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- =========================
+     FOOTER
+========================= -->
+<footer class="site-footer">
+    <p>© <span id="year"></span> Riverside Wellness Clinic. All rights reserved.</p>
+    <p class="footer-note">Built with FastAPI, LangGraph, and OpenAI for intelligent patient support.</p>
+</footer>
+
+<!-- =========================
+     CHAT POPUP (Vena AI)
+========================= -->
+<div id="chat-popup" class="chat-popup hidden">
+    <div class="chat-header-popup">
+        <div class="chat-header-left">
+            <span class="chat-avatar">🤖</span>
+            <div>
+                <div class="chat-title">Vena AI • Virtual Doctor Assistant</div>
+                <div class="chat-subtitle">Riverside Wellness Clinic’s AI-powered assistant.</div>
+            </div>
+        </div>
+        <button id="close-chat" class="close-btn">✖</button>
+    </div>
+
+    <div id="chat-box" class="chat-box">
+        <div class="bot-msg">
+            Hi, I’m Vena AI, the virtual doctor assistant for Riverside Wellness Clinic. How can I help you today?
+        </div>
+    </div>
+
+    <div id="typing-indicator" class="typing hidden">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <form id="chat-form" class="chat-input-area">
+        <input type="hidden" id="thread_id">
+
+        <input
+            id="message"
+            class="chat-input"
+            placeholder="Type your message…"
+            autocomplete="off"
+            required
+        />
+
+        <button class="send-btn" type="submit">Send</button>
+    </form>
+</div>
+
+<!-- floating launcher -->
+<button id="floating-chat-btn" class="floating-chat-btn" title="Chat with Vena AI">
+    💬
+</button>
+
+
+<!-- =========================
+     SCRIPTS
+========================= -->
+<script>
+    // Smooth scroll for nav
+    document.querySelectorAll(".nav-link").forEach(link => {
+        link.addEventListener("click", (e) => {
+            const href = link.getAttribute("href");
+            if (href && href.startsWith("#")) {
+                e.preventDefault();
+                document.querySelector(href).scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    });
+
+    // Dynamic year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Chat elements
+    const chatPopup        = document.getElementById("chat-popup");
+    const openChatBtn      = document.getElementById("open-chat");
+    const closeChatBtn     = document.getElementById("close-chat");
+    const floatingBtn      = document.getElementById("floating-chat-btn");
+    const form             = document.getElementById("chat-form");
+    const chatBox          = document.getElementById("chat-box");
+    const messageInput     = document.getElementById("message");
+    const threadInput      = document.getElementById("thread_id");
+    const typingIndicator  = document.getElementById("typing-indicator");
+
+    function openChat() {
+        chatPopup.classList.remove("hidden");
+        chatPopup.classList.add("chat-popup-visible");
+        messageInput.focus();
+    }
+
+    function closeChat() {
+        chatPopup.classList.add("hidden");
+        chatPopup.classList.remove("chat-popup-visible");
+    }
+
+    openChatBtn.addEventListener("click", openChat);
+    floatingBtn.addEventListener("click", openChat);
+    closeChatBtn.addEventListener("click", closeChat);
+
+    function scrollToBottom() {
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    // Pretty formatting for appointment summaries
+    function formatText(text) {
+        text = text.replace(/ - /g, " - ");
+
+        const fields = [
+            "Name:",
+            "Email:",
+            "Phone:",
+            "Date of Birth:",
+            "Reason for Visit:",
+            "Notes for the Doctor:",
+            "Date:",
+            "Time:",
+            "Doctor:"
+        ];
+
+        fields.forEach(field => {
+            const regex = new RegExp(`- ${field}`, "g");
+            text = text.replace(regex, `<br><strong>${field}</strong>`);
+        });
+
+        text = text.replace(/- ([A-Za-z ]+?):/g, "<br><strong>$1:</strong>");
+        return text.trim();
+    }
+
+    // Chat submit
+    form.onsubmit = async (e) => {
+        e.preventDefault();
+
+        const message = messageInput.value.trim();
+        if (!message) return;
+
+        chatBox.innerHTML += `<div class="user-msg">${message}</div>`;
+        messageInput.value = "";
+        scrollToBottom();
+
+        typingIndicator.classList.remove("hidden");
+
+        try {
+            const response = await fetch("/send", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    message: message,
+                    thread_id: threadInput.value
+                })
+            });
+
+            const data = await response.json();
+            typingIndicator.classList.add("hidden");
+
+            const formatted = formatText(data.answer || "");
+            chatBox.innerHTML += `<div class="bot-msg">${formatted}</div>`;
+            threadInput.value = data.thread_id;
+
+        } catch (err) {
+            typingIndicator.classList.add("hidden");
+            chatBox.innerHTML += `<div class="bot-msg error">Sorry, something went wrong. Please try again.</div>`;
+        }
+
+        scrollToBottom();
+    };
+</script>
+
+</body>
+</html>
